@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block title %}Stream{% endblock %}
+{% block content %}
+    {% with id='stream' %}
+        {% include "menu.html" %}
+    {% endwith %}
+    <div class="ui stacked segment">
+        <img class="ui centered image" src='http://watchfuldev.fritz.box:8080/?action=stream'>
+    </div>
+{% endblock %}

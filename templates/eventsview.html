@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block title %}Events{% endblock %}
+{% block content %}
+    {% with id='events' %}
+        {% include "menu.html" %}
+    {% endwith %}
+    <div class="ui stacked segment">
+        <div class="ui four column grid">
+            {% for event in events %}
+            <div class="column">
+                <img class="ui image" src="data:image/jpg;base64,{{ event['captured_image'].decode() }}" alt="img_data"  id="imgslot"/> </img>
+                <div>{{ event['timestamp'] }} UTC</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
