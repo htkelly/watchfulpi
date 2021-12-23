@@ -6,7 +6,7 @@ Watchful Pi is an internet-connected, extensible, multi-device home security sys
 ## Features
 Watchful Pi sensor devices can operate in 'sensing' or 'streaming' mode. Streaming mode allows the user to view a live video stream from the device via a web interface that runs on the hub device. Sensing mode waits until motion is detected by the passive infrared sensor, then captures an image and reports the event to the hub device.
 
-The Watchful Pi hub device can discover and control multiple sensor devices on the network. When a sensor device reports a security event to the hub, the hub logs the event in a MongoDB database, as well as sending an email alert and reaching out to the Azure Face API to check if a person is detected in the captured image. Leveraging cloud services like allows our lightweight IoT solution to include computationally expensive features that would not be possible on the local device.
+The Watchful Pi hub device can discover and control multiple sensor devices on the network. When a sensor device reports a security event to the hub, the hub logs the event in a MongoDB database, as well as sending an email alert and reaching out to the Azure Face API to check if a person is detected in the captured image. Leveraging cloud services like Azure allows our lightweight IoT solution to include computationally expensive features that would not be possible on the local device.
 
 The Watchful Pi hub device also runs a web-based user interface, for end-user device management, event viewing, and stream viewing. The web app also exposes API endpoints that adhere to RESTful design principles. Device management in the web-based UI is implemented using a combination of client-side Javascript and the API endpoints.
 
