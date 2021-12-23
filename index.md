@@ -2,9 +2,10 @@
 
 Watchful Pi is an internet-connected, extensible, multi-device home security system that uses Raspberry Pi SBCs, cameras, and PIR sensors for home security monitoring.
 
-## Purpose
+## Overview
 
-System description goes here.
+![Device description](/docs/assets/images/devices.png)
+![Process description](/docs/assets/images/process.png)
 
 ## Installation guide
 
