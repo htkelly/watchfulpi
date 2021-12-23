@@ -52,7 +52,7 @@ The sensor devices require:
 1. Install the above listed software dependencies according to the linked instructions.
 2. Use pip to install the above listed Python modules (`sudo apt-get install python3-pip` if not already installed)
 3. Clone the Watchful Pi repository on the hub device (`git clone https://github.com/htkelly/watchfulpi.git`)
-4. The repo can also be cloned on the sensor device(s), or alternatively just download or copy the watchful_sensor.py program to the sensor device(s), as this is the only code that will need to run on the sensor device (the hub device requires all the other files)
+4. The repo can also be cloned on the sensor device(s), or alternatively just download or copy the `watchful_sensor.py` program to the sensor device(s), as this is the only code that will need to run on the sensor device (the hub device requires all the other files)
 5. Create a `.env` file in the same directory as `watchful_hub.py` and populate it with the following environmental variables:
    - `mongoServerHost`=(MongoDB server hostname or IP)
    - `subscription_key`=(Subscription key for Azure Face API)
