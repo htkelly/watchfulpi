@@ -54,4 +54,9 @@ The sensor devices require:
   
 ## Usage
 
-Usage instructions will go here
+### Hub Quickstart Script
+We have included a bash script in the Watchful Pi repo that launches both the watchful_hub.py program and the watchful_interface.py program in one terminal, for ease-of-use.
+
+See the short instructional video below for a demonstration of the quickstart script and quick tour of the web interface:
+
+[![Hub Quickstart instructional video](https://img.youtube.com/vi/6alG7rHy9vE/0.jpg)](https://www.youtube.com/watch?v=6alG7rHy9vE)
