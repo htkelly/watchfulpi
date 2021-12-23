@@ -5,6 +5,7 @@
         {% include "menu.html" %}
     {% endwith %}
     <div class="ui stacked segment">
-        <img class="ui centered image" src='http://{{ sensor }}:8080/?action=stream'>
+        <h1>Stream from {{ sensor }}</h1>
+        <img class="ui centered image" src='http://{{ ip }}:8080/?action=stream' onerror="this.src='../static/stream404.jpg'">
     </div>
 {% endblock %}

@@ -5,11 +5,12 @@
         {% include "menu.html" %}
     {% endwith %}
     <div class="ui stacked segment">
+        <h1>Events logged by {{ sensor }}</h1>
         <div class="ui four column grid">
             {% for event in events %}
             <div class="column">
-                <img class="ui image" src="data:image/jpg;base64,{{ event['captured_image'].decode() }}" alt="img_data"  id="imgslot"/> </img>
-                <div>{{ event['timestamp'] }} UTC</div>
+                <img class="ui image" src="data:image/jpg;base64,{{ event['captured_image'].decode() }}" alt="Event image" width="320" height="240"/> </img>
+                <div>Time: {{ event['timestamp'] }} UTC</div>
                 <div>Notes: {{ event['notes'] }}</div>
             </div>
             {% endfor %}

@@ -4,19 +4,10 @@
     {% with id='dashboard' %}
         {% include "menu.html" %}
     {% endwith %}
-    <div class="ui raised segment">
-        {% for key,value in sensors.items() %}
-            <div class="ui stacked segment">
-                <h1> {{ key }} </h1>
-                <p>IP: {{ value }}</p>
-                <a href="/{{ key }}/eventsview" class="ui icon button">
-                    <i class ="icon folder"></i>
-                </a>
-                <a href="/{{ key }}/streamview" class="ui icon button">
-                    <i class ="icon camera"></i>
-                </a>
-                <button class="ui right floated toggle button" onclick="stream('{{ key }}')">Stream</button>
-            </div>
-        {% endfor %}
+    <div class="ui raised segment" id="outer">
+        <button class="ui middle aligned button" onclick="allStandby()">All standby</button>
+        <button class="ui middle aligned button" onclick="allSense()">All sense</button>
+        <button class="ui middle aligned button" onclick="allStream()">All stream</button>
     </div>
+    <script>getSensors()</script>
 {% endblock %}
